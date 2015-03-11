@@ -99,36 +99,385 @@ textarea {
     padding: 0px;
     margin: 0px;
     border: 0px;
+    font-family: Bebas;
 }
 
 html {
-
+    font-size: 10px;
 }
 
 body {
-
+    background: url(../img/background.png);
+    overflow: hidden;
 }
 
 .container {
+    padding: 0px 10px;
     max-width: 940px;
-    height: 300px;
-    background: red;
+    background: url(../img/background.png);
     margin: 0 auto;
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 0px;
+
+}
+
+h2 {
+
+}
+
+section h3 {
+    color: #ea5c36;
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+    color: #b9b9b9;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: Helvetica;
+    font-size: 1.2rem;
 }
 
 
+/* ==========================================
+                    Grid
+   ========================================== */
+
+.grid {
+    overflow: hidden;
+}
+
+.col-1 {
+    width: 8.333333%;
+}
+
+.col-2 {
+    width: 16.666667%;
+}
+
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-5 {
+    width: 41.666667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333333%;
+}
+
+.col-8 {
+    width: 66.6666667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.333333%;
+}
+
+.col-11 {
+    width: 91.666667%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*='col-'] {
+    float: left;
+}
+
+/* ==========================================
+                    Header
+   ========================================== */
+
+header {
+    padding-top: 18px;
+    min-height: 70px;
+}
+
+header h1 {
+    float: left;
+    font-size: 3.6rem;
+    color: #e8603c;
+}
+
+header h1 span {
+    color: #f3af9d;
+}
+
+
+header nav {
+    margin-top: 15px;
+    float: right;
+}
+
+header nav li {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+header nav li a {
+    font-size: 1.6rem;
+    color: #b9b9b9;
+}
+
+header .active {
+    color: #e8663c;
+}
+
+
+/* ==========================================
+                Main
+   ========================================== */
+
+main {
+    height: 100px;
+    max-width: 100%;
+    background: #f3af9d;
+}
+
+section.slide-show {
+    background: url(../img/slider.jpg) no-repeat;
+    background-size: contain;
+    max-width: 100%;
+    height: 401px;
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.slide-show .sliderleft {
+    position: absolute;
+    left: 0px;
+    top: 160px;
+}
+
+.slide-show .sliderright {
+    position: absolute;
+    right: 0px;
+    top: 160px;
+}
+
+section.thumb {
+    overflow: hidden;
+}
+
+section.thumb .col-2 {
+    margin-right: 3.3px;
+}
+
+section.thumb .col-2:last-of-type {
+    margin-right: 0px;
+    width: 140px;
+}
+
+
+section.blog {
+    margin: 40px 0px 30px 0px;
+    padding-bottom: 10px;
+    overflow: hidden;
+
+}
+
+section.blog .div-blog {
+    max-width: 29.361702127%; /*276px*/
+    float: left;
+    margin-right: 5.95745%;
+}
+
+section.blog .div-blog:last-of-type {
+    margin-right: 0%;
+}
+
+.div-blog img {
+    float: left;
+    margin: 0px 22px 30px 0px;
+}
+
+.div-blog h3 {
+    margin: 0px 0px 30px 0px;
+}
+
+.div-blog p {
+    margin-bottom: 20px;
+}
+
+.div-blog a {
+    padding: 8px 18px;
+    background: #ea5c36;
+    color: #ffe5e5;
+    font-size: 1.2rem;
+}
+
+
+section.recent-works {
+    overflow: hidden;
+}
+
+section.recent-works h3 {
+    float: left;
+    margin-bottom: 0px;
+}
+
+
+.recent-works-background {
+    background: url(../img/shade.gif);
+    height: 19px;
+    max-width: 85.74468%;
+    margin: 0px 0px 7px 150px;
+}
+
+.recent-works-content {
+    float: left;
+    margin: 20px 20px 0px 0px;
+}
+
+.recent-works-content:last-of-type {
+    margin-right: 0px;
+}
+
+.recent-works-text {
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.recent-works-text p {
+    margin-top: 5px;
+    color: #e8663c;
+    font-size: 1.1rem;
+    font-family: Bebas;
+}
+
+/* ==========================================
+                Footer
+   ========================================== */
+
+
+footer {
+    height: 263px;
+    max-width: 100%;
+    background: #f3af9d;
+    margin-top: 48px;
+}
+
+
+footer .content {
+    background: #e8663c;
+    width: 940px;
+    padding-bottom: 20px;
+}
+
+footer .col-3 {
+    max-width: 26.9503546%;
+    padding: 0px 30px 0px 30px;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+footer .col-3 h2 {
+    margin: 39px 0px 11px 0px;
+}
+
+footer .col-3 p {
+    margin-top: 17px;
+}
+
+footer .col-3 a {
+    color: #f3b29d;
+    font-size: 1.2rem;
+    font-family: Helvetica;
+}
+
+footer .col-3 .time {
+    margin-top: 8px;
+    color: #f3b29d;
+}
+
+footer .col-3 .contact-text {
+    margin: 0px 0px 15px 0px;
+}
+
+footer .col-3 img {
+    margin-right: 4px;
+}
+
+/* ==========================================
+                Media Queries
+   ========================================== */
+
+@media only screen and (max-width : 959px) {
+
+    .col-sm-3 {
+        width: 25%;
+        margin-bottom: 20px;
+    }
+
+    section.slide-show {
+        height: 400px;
+    }
+
+    .slide-show .sliderleft {
+    position: absolute;
+    left: 0px;
+    top: 140px;
+    }
+
+    .slide-show .sliderright {
+    position: absolute;
+    right: 0px;
+    top: 140px;
+    }
+
+    section.thumb .grid {
+        padding-left: 10.6382979%;
+        margin: 0 auto;
+    }
+
+    section.thumb .col-sm-3:last-of-type, section.thumb .col-sm-3:nth-child(3) {
+        width: 140px;
+    }
+
+    section.blog h3 {
+        height: 75px;
+    }
+
+}
+
+@media only screen and (max-width : 959px) {
+    
 
 
 
 
+}
+/* ==========================================
+                Fonts
+   ========================================== */
 
 
 
-
-
-
-
-
+@font-face{ 
+    font-family: Bebas;
+    src: url(../font/bebas/BEBAS___.TTF);
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
