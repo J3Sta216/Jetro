@@ -425,30 +425,30 @@ footer .col-3 img {
 
 @media only screen and (max-width : 959px) {
 
-    .col-sm-3 {
-        width: 25%;
-        margin-bottom: 20px;
-    }
-
     section.slide-show {
         height: 400px;
     }
 
     .slide-show .sliderleft {
-    position: absolute;
-    left: 0px;
-    top: 140px;
+        position: absolute;
+        left: 0px;
+        top: 140px;
     }
 
     .slide-show .sliderright {
-    position: absolute;
-    right: 0px;
-    top: 140px;
+        position: absolute;
+        right: 0px;
+        top: 140px;
     }
 
     section.thumb .grid {
         padding-left: 10.6382979%;
         margin: 0 auto;
+    }
+
+    .col-sm-3 {
+        width: 33.333333333%;
+        margin-bottom: 20px;
     }
 
     section.thumb .col-sm-3:last-of-type, section.thumb .col-sm-3:nth-child(3) {
@@ -459,14 +459,67 @@ footer .col-3 img {
         height: 75px;
     }
 
+    section.recent-works {
+    }   
+
+    .recent-works-container {
+        max-width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    section.recent-works .recent-works-content {
+        margin: 0px 8% 20px 8%;
+    }
 }
 
-@media only screen and (max-width : 959px) {
+@media only screen and (max-width : 635px) {
+    section.slide-show {
+        height: 280px;
+    }
     
+    .slide-show .sliderleft {
+        position: absolute;
+        left: 0px;
+        top: 80px;
+    }
 
+    .slide-show .sliderright {
+        position: absolute;
+        right: 0px;
+        top: 80px;
+    }
+    
+    section.thumb .grid {
+        padding-left: 3.6382979%;
+        margin: 0 auto;
+    }
 
+    section.blog {
+        padding-top: 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    section.blog .div-blog {
+        float: none;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
 
+    section.blog .div-blog h3 {
+        height: 50px;
+        margin-bottom: 5px;
+    }
 
+    section.blog .div-blog img {
+        margin-bottom: 5px;
+
+    }
+
+    section.blog .div-blog p {
+        width: 90%;
+    }
 }
 /* ==========================================
                 Fonts
