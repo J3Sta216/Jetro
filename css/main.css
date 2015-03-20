@@ -108,7 +108,6 @@ html {
 
 body {
     background: url(../img/background.png);
-    overflow: hidden;
 }
 
 .container {
@@ -125,7 +124,8 @@ h1 {
 }
 
 h2 {
-
+    font-size: 2.4rem;
+    color: #fff;
 }
 
 section h3 {
@@ -136,6 +136,11 @@ section h3 {
 h4 {
     font-size: 1.6rem;
     color: #b9b9b9;
+}
+
+h5 {
+    font-size: 1.4rem;
+    color: #e8603c;
 }
 
 a {
@@ -249,10 +254,37 @@ header .active {
    ========================================== */
 
 main {
-    height: 100px;
-    max-width: 100%;
+    position: relative;
+    width: 100%;
+    height: 61px;
     background: #f3af9d;
 }
+
+.page-title {
+    width: 940px;
+    margin: 0 auto;
+    height: 61px;
+    background: #e8603c;
+}
+
+.page-title h2 {
+    padding: 15px 0px 0px 15px;
+}
+
+section.contents {
+    max-width: 69.36170213%;
+    float: left; 
+    padding-right: 7.2340426%;
+    overflow: hidden;
+}
+
+                                                /* ==========================================
+                                                                       Home=page
+                                                ========================================== */
+
+/* ==========================================
+                Slide-show
+   ========================================== */
 
 section.slide-show {
     background: url(../img/slider.jpg) no-repeat;
@@ -290,7 +322,9 @@ section.slide-show {
     margin: 20px 20px;
 }
 
-
+/* ==========================================
+               Thumbs
+   ========================================== */
 
 section.thumb {
     overflow: hidden;
@@ -305,6 +339,9 @@ section.thumb .col-2:last-of-type {
     width: 140px;
 }
 
+/* ==========================================
+               Blog
+   ========================================== */
 
 section.blog {
     margin: 40px 0px 30px 0px;
@@ -343,6 +380,9 @@ section.blog .div-blog:last-of-type {
     font-size: 1.2rem;
 }
 
+/* ==========================================
+                Recent works
+   ========================================== */
 
 section.recent-works {
     overflow: hidden;
@@ -352,7 +392,6 @@ section.recent-works h3 {
     float: left;
     margin-bottom: 0px;
 }
-
 
 .recent-works-background {
     background: url(../img/shade.gif);
@@ -380,16 +419,149 @@ section.recent-works h3 {
     margin-top: 5px;
     color: #e8663c;
     font-size: 1.1rem;
-    font-family: Bebas;
+    font-family: 'Bebas';
+}
+
+
+                                                /* ==========================================
+                                                                       Home=page
+                                                ========================================== */
+
+/* ==========================================
+                About us
+   ========================================== */
+
+img.me {
+    float: left;
+    margin-right: 2.765958%;
+    margin-top: 28px;
+}
+
+p.about-us {
+    margin-top: 28px;
+    font-size: 1.2rem;
+    color: #414141;
+}    
+    
+.about-us span {
+    font-weight: bold;
+    font-size: 3.6rem;
+    float: left;
+    color: #e8603c;
+    font-family: Helvetica;
+    height: 20px;
+    line-height: 33px;
+}
+
+.blog-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #7f7f7f;
+    width: 580px;
+    float: right;
+    padding-left: 19px;
+    border-left: 8px solid #e8663c;
+}
+
+.contents .grid {
+    padding-top: 32px;
+    clear: both;
+}
+
+.contents .grid [class*='col-'] p {
+    padding: 0px 10px; 
+}
+
+.alert-text {
+    max-width: 100%;
+    height: 60px;
+    margin-top: 18px;
+}
+
+.alert-text p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+.green {
+    color: #98c601;
+    background: #effeb9;
+    border: 1px solid #98c601;
+}
+
+.red {
+    color: #eb5439;
+    background: #fbcbc1;
+    border: 1px solid #eb5439;
+}
+
+.orange {
+    color: #fab418;
+    background: #ffe9ad;
+    border: 1px solid #fab418;
+}
+
+.blue {
+    color: #4d8fcb;
+    background: #d1e4f3;
+    border: 1px solid #4d8fcb;
+}
+
+/* ==========================================
+                Aside
+   ========================================== */
+
+aside {
+    float: left;
+    width: 220px;
+    margin-top: 28px;
+}
+
+.aside-div {
+    margin-bottom: 28px;
+    overflow: hidden;
+}
+
+.aside-div h5 {
+    width: 45%;
+    float: left;
+    margin-bottom: 21px;
+}
+
+.aside-border {
+    background: url(../img/shade.gif);
+    height: 19px;
+    width: 55%;
+    float: right;
+    margin-bottom: 21px;
+}
+
+.aside-div ul, .aside-div a {
+    list-style-type: none;
+    color: #414141;
+    font-size: 1.2rem;
+    font-family: Helvetica;
+}
+
+.photo-boxes {
+    height: 48px;
+    width: 48px;
+    background: #f3af9d;
+    border: 1px solid #e8603c;
+    float: left;
+    margin: 0px 6px 6px 0px;
+}
+
+.photo-boxes:last-of-type, .photo-boxes:nth-child(6) {
+    margin-right: 0px;
 }
 
 /* ==========================================
                 Footer
    ========================================== */
-
-
 footer {
-    height: 263px;
+    height: 271px;
     max-width: 100%;
     background: #f3af9d;
     margin-top: 48px;
@@ -439,6 +611,23 @@ footer .col-3 img {
 /* ==========================================
                 Media Queries
    ========================================== */
+@media only screen and (max-width : 976px) {
+
+    section.thumb .grid {
+        padding-left: 10.6382979%;
+        margin: 0 auto;
+    }
+
+    .col-sm-3 {
+        width: 33.333333333%;
+        margin-bottom: 20px;
+    }
+
+    section.thumb .col-sm-3:last-of-type, section.thumb .col-sm-3:nth-child(3) {
+        width: 140px;
+    }
+}
+
 
 @media only screen and (max-width : 959px) {
 
@@ -464,32 +653,20 @@ footer .col-3 img {
         position: absolute;
         top: 0px;
         left: 0px;
+        margin: 10px 10px 0px 10px;
     }
 
     .slide-show-text h2{
-        margin: 10px 20px;
+        margin: 10px 20px 0px 20px;
     }
 
-    section.thumb .grid {
-        padding-left: 10.6382979%;
-        margin: 0 auto;
-    }
-
-    .col-sm-3 {
-        width: 33.333333333%;
-        margin-bottom: 20px;
-    }
-
-    section.thumb .col-sm-3:last-of-type, section.thumb .col-sm-3:nth-child(3) {
-        width: 140px;
+    .slide-show-text p {
+        margin: 0px 0px 0px 20px;
     }
 
     section.blog h3 {
         height: 75px;
     }
-
-    section.recent-works {
-    }   
 
     .recent-works-container {
         max-width: 90%;
@@ -501,16 +678,13 @@ footer .col-3 img {
         margin: 0px 8% 20px 8%;
     }
 
-
     footer .col-3 {
     max-width: 40%;
     }
 }
 
-@media only screen and (max-width : 740px) {
 
-    section.recent-works {
-    }   
+@media only screen and (max-width : 740px) { 
 
     .recent-works-container {
         max-width: 100%;
@@ -532,6 +706,7 @@ footer .col-3 img {
 @media only screen and (max-width : 635px) {
     section.slide-show {
         height: 280px;
+        margin-bottom: 100px;
     }
     
     .slide-show .sliderleft {
@@ -544,6 +719,14 @@ footer .col-3 img {
         position: absolute;
         right: 0px;
         top: 80px;
+    }
+
+    .slide-show-text {
+        max-width: 100%;
+        height: 90px;
+        position: absolute;
+        top: 250px;
+        left: 0px;
     }
     
     section.thumb .grid {
@@ -591,6 +774,7 @@ footer .col-3 img {
 }
 
 @media only screen and (max-width : 496px) {
+
     section.slide-show {
         height: 240px;
     }
@@ -598,18 +782,21 @@ footer .col-3 img {
     .slide-show .sliderleft {
         position: absolute;
         left: 0px;
-        top: 30px;
+        top: 50px;
     }
 
     .slide-show .sliderright {
         position: absolute;
         right: 0px;
-        top: 30px;
+        top: 50px;
     }
 
-        .slide-show-text {
-            display: none;
-        }
+    .slide-show-text {
+        height: 100px;
+        position: absolute;
+        top: 190px;
+        left: 0px;
+    }
 
     .slide-show-text h2{
         margin: 10px 20px;
@@ -624,8 +811,6 @@ footer .col-3 img {
         margin: 5px;
         width: 140px;
     }
-
-
 
     section.recent-works {
         float: none;
@@ -643,7 +828,7 @@ footer .col-3 img {
         height: 150px;
     }
 
-        section.thumb .grid {
+    section.thumb .grid {
         margin-left: 0px;
     }
 
