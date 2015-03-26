@@ -149,6 +149,7 @@ a {
 p {
     font-family: Helvetica;
     font-size: 1.2rem;
+    color:#929292
 }
 
 
@@ -260,7 +261,7 @@ main {
 }
 
 .page-title {
-    width: 940px;
+    max-width: 100%;
     margin: 0 auto;
     height: 61px;
     background: #e8603c;
@@ -318,6 +319,7 @@ section.slide-show {
 
 .slide-show-text h2, .slide-show-text p {
     margin: 20px 20px;
+    color: white;
 }
 
 /* ==========================================
@@ -490,6 +492,7 @@ p.about-us:nth-child(7) {
     text-align: center;
     margin-top: 20px;
     font-size: 1.4rem;
+    color: #000;
 }
 
 .green {
@@ -533,6 +536,27 @@ p.about-us:nth-child(7) {
     position: absolute;
     top: 0px;
     left: -85px;
+}
+
+
+.img-blog {
+    max-width: 100%;
+    height: 300px;
+}
+
+.blog1 {
+    background: url(../img/blog1.jpg) no-repeat;
+    background-size: contain;
+}
+
+.blog2 {
+    background: url(../img/blog2.jpg) no-repeat;
+    background-size: contain;
+}
+
+.blog3 {
+    background: url(../img/blog3.jpg) no-repeat;
+    background-size: contain;
 }
 
 .blogpost .info {
@@ -681,6 +705,7 @@ aside {
 /* ==========================================
                Portfolio
    ========================================== */
+
 .nav-portfolio {
     margin-top: 35px;
 }
@@ -755,6 +780,13 @@ section.portfolio-page {
     margin-top: 25px;
 }
 
+.portfolio-page .portfolio-img {
+    height: 400px;
+    max-width: 100%;
+    background: url(../img/portfolioItem.jpg) no-repeat;
+    background-size: contain;
+}
+
 section.related-items {
     margin-top: 53px;
 }
@@ -779,6 +811,10 @@ section.contact {
 
 .contact .map {
     margin-bottom: 36px;
+    height: 400px;
+    max-width: 100%;
+    background: url(../img/map.jpg) no-repeat;
+    background-size: contain;
 }
 
 .contact-info {
@@ -841,6 +877,7 @@ section.contact {
 .form form textarea {
     border: 1px solid #e8603c;
     padding: 5px;
+    width: 420px;
 }
 
 .form form .submit {
@@ -861,6 +898,9 @@ footer {
     margin-top: 48px;
 }
 
+footer p {
+    color: #fff;
+}
 
 footer .content {
     background: #e8663c;
@@ -902,247 +942,7 @@ footer .col-3 img {
     margin-right: 4px;
 }
 
-/* ==========================================
-                Media Queries
-   ========================================== */
-@media only screen and (max-width : 976px) {
 
-    section.thumb .grid {
-        padding-left: 10.6382979%;
-        margin: 0 auto;
-    }
-
-    .col-sm-3 {
-        width: 33.333333333%;
-        margin-bottom: 20px;
-    }
-
-    section.thumb .col-sm-3:last-of-type, section.thumb .col-sm-3:nth-child(3) {
-        width: 140px;
-    }
-
-    section.contents {
-        max-width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-
-    }
-}
-
-
-@media only screen and (max-width : 959px) {
-
-    section.slide-show {
-        height: 400px;
-    }
-
-    .slide-show .sliderleft {
-        position: absolute;
-        left: 0px;
-        top: 140px;
-    }
-
-    .slide-show .sliderright {
-        position: absolute;
-        right: 0px;
-        top: 140px;
-    }
-
-    .slide-show-text {
-        max-width: 100%;
-        height: 90px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        margin: 10px 10px 0px 10px;
-    }
-
-    .slide-show-text h2{
-        margin: 10px 20px 0px 20px;
-    }
-
-    .slide-show-text p {
-        margin: 0px 0px 0px 20px;
-    }
-
-    section.blog h3 {
-        height: 75px;
-    }
-
-    .recent-works-container {
-        max-width: 90%;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    section.recent-works .recent-works-content {
-        margin: 0px 8% 20px 8%;
-    }
-
-    footer .col-3 {
-    max-width: 40%;
-    }
-}
-
-
-@media only screen and (max-width : 740px) { 
-
-    .recent-works-container {
-        max-width: 100%;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    section.recent-works .recent-works-content {
-        margin: 0px 5% 20px 5%;
-    }
-
-    footer .col-3 {
-    max-width: 90%;
-    margin: 0 auto;
-    float: none;
-    }
-}
-
-@media only screen and (max-width : 664px) {
-    section.slide-show {
-        height: 280px;
-        margin-bottom: 100px;
-    }
-    
-    .slide-show .sliderleft {
-        position: absolute;
-        left: 0px;
-        top: 80px;
-    }
-
-    .slide-show .sliderright {
-        position: absolute;
-        right: 0px;
-        top: 80px;
-    }
-
-    .slide-show-text {
-        max-width: 100%;
-        height: 90px;
-        position: absolute;
-        top: 250px;
-        left: 0px;
-    }
-    
-    section.thumb .grid {
-        padding-left: 3.6382979%;
-        margin: 0 auto;
-    }
-
-
-    section.blog {
-        padding-top: 20px;
-        width: 80%;
-        margin: 0 auto;
-    }
-    
-    section.blog .div-blog {
-        float: none;
-        max-width: 100%;
-        margin-bottom: 50px;
-    }
-
-    section.blog .div-blog h3 {
-        height: 60px;
-        margin-bottom: 5px;
-    }
-
-    section.blog .div-blog img {
-        margin-bottom: 5px;
-
-    }
-
-    section.blog .div-blog p {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width : 570px) {
-
-    .recent-works-container {
-        max-width: 50%;
-    }
-
-    section.recent-works .recent-works-content {
-        margin: 0px 5% 20px 5%;
-    }
-}
-
-@media only screen and (max-width : 496px) {
-
-    section.slide-show {
-        height: 240px;
-    }
-
-    .slide-show .sliderleft {
-        position: absolute;
-        left: 0px;
-        top: 50px;
-    }
-
-    .slide-show .sliderright {
-        position: absolute;
-        right: 0px;
-        top: 50px;
-    }
-
-    .slide-show-text {
-        height: 100px;
-        position: absolute;
-        top: 190px;
-        left: 0px;
-    }
-
-    .slide-show-text h2{
-        margin: 10px 20px;
-    }
-
-    section.thumb .grid {
-        margin-left: 20px;
-    }
-
-    section.thumb .col-sm-3 {
-        float: left;
-        margin: 5px;
-        width: 140px;
-    }
-
-    section.recent-works {
-        float: none;
-    }
-
-    section.recent-works .recent-works-container {
-        margin-left: 0px;
-        max-width: 100%;
-        margin-left: 40px;
-    }
-}
-
-@media only screen and (max-width : 431px) {
-    section.slide-show {
-        height: 150px;
-    }
-
-    section.thumb .grid {
-        margin-left: 0px;
-    }
-
-    
-    section.thumb .col-sm-3 {
-        width: 140px;
-        margin: 1px;
-    }
-
-    section.blog .div-blog h3 {
-        height: 80px;
-    }
-}
 /* ==========================================
                 Fonts
    ========================================== */
@@ -1246,6 +1046,431 @@ footer .col-3 img {
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================
+                Media Queries
+   ========================================== */
+@media only screen and (max-width : 1130px) {
+    
+    .blogpost .iconblog {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 976px) {
+
+    .blogpost .iconblog {
+        display: block;
+        position: static;
+        margin-right: 10px;
+        float: left;
+    }
+
+    section.thumb .grid {
+        padding-left: 10.6382979%;
+        margin: 0 auto;
+    }
+
+    .col-sm-3 {
+        width: 33.333333333%;
+        margin-bottom: 20px;
+    }
+
+    section.thumb .col-sm-3:last-of-type, section.thumb .col-sm-3:nth-child(3) {
+        width: 140px;
+    }
+
+    section.contents {
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-right: 0px;
+    }
+
+    aside {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .aside-div {
+        max-width: 90%;
+    }
+
+    aside .photo {
+        float: left;
+    }
+
+    .photo-boxes:last-of-type {
+        margin-right: 5px;
+    }
+
+    section.portfolio .portfolio-container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    section.portfolio .recent-works-content:last-of-type {
+        margin-right: 20px;
+    }
+
+    section.portfolio-related .recent-works-content {
+        margin-right: 10%;
+    }
+}
+
+
+@media only screen and (max-width : 959px) {
+
+    section.slide-show {
+        height: 400px;
+    }
+
+    .slide-show .sliderleft {
+        position: absolute;
+        left: 0px;
+        top: 140px;
+    }
+
+    .slide-show .sliderright {
+        position: absolute;
+        right: 0px;
+        top: 140px;
+    }
+
+    .slide-show-text {
+        max-width: 100%;
+        height: 90px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 10px 10px 0px 10px;
+    }
+
+    .slide-show-text h2{
+        margin: 10px 20px 0px 20px;
+    }
+
+    .slide-show-text p {
+        margin: 0px 0px 0px 20px;
+    }
+
+    section.blog h3 {
+        height: 75px;
+    }
+
+    .recent-works-container {
+        max-width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    section.recent-works .recent-works-content {
+        margin: 0px 8% 20px 8%;
+    }
+
+    footer .col-3 {
+        max-width: 40%;
+    }
+}
+
+@media only screen and (max-width : 837px) {
+    
+    .blogpost .iconblog {
+        display: none;
+    }
+
+    section.portfolio .portfolio-container {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .portfolio-page .portfolio-img {
+        height: 350px;
+    }
+
+    .contact .map {
+        margin-bottom: 10px;
+        height: 350px;
+    }
+
+    .form {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }  
+
+    section.contact {
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    section.contact .contact-info {
+        width: 100%;
+    }
+} 
+
+@media only screen and (max-width : 740px) { 
+
+    .recent-works-container {
+        max-width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    section.recent-works .recent-works-content {
+        margin: 0px 5% 20px 5%;
+    }
+
+    .portfolio-page .portfolio-img {
+        height: 300px;
+    }
+
+    .contact .map {
+        height: 300px;
+    }
+
+    footer .col-3 {
+    max-width: 90%;
+    margin: 0 auto;
+    float: none;
+    }
+}
+
+@media only screen and (max-width : 664px) {
+    section.slide-show {
+        height: 280px;
+        margin-bottom: 100px;
+    }
+    
+    .slide-show .sliderleft {
+        position: absolute;
+        left: 0px;
+        top: 80px;
+    }
+
+    .slide-show .sliderright {
+        position: absolute;
+        right: 0px;
+        top: 80px;
+    }
+
+    .slide-show-text {
+        max-width: 100%;
+        height: 90px;
+        position: absolute;
+        top: 250px;
+        left: 0px;
+    }
+    
+    section.thumb .grid {
+        padding-left: 3.6382979%;
+        margin: 0 auto;
+    }
+
+
+    section.blog {
+        padding-top: 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    section.blog .div-blog {
+        float: none;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    section.blog .div-blog h3 {
+        height: 60px;
+        margin-bottom: 5px;
+    }
+
+    section.blog .div-blog img {
+        margin-bottom: 5px;
+
+    }
+
+    section.blog .div-blog p {
+        width: 90%;
+    }
+
+    section.contents .blog-quote {
+        width: 100%;
+    }
+
+    .portfolio-page .portfolio-img {
+        height: 270px;
+    }
+
+    .contact .map {
+        height: 270px;
+    }
+
+    .img-blog {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width : 570px) {
+
+    .recent-works-container {
+        max-width: 50%;
+    }
+
+    section.recent-works .recent-works-content {
+        margin: 0px 5% 20px 5%;
+    }
+
+    section.contents .grid .col-6, section.contents .grid .col-4 {
+        width: 100%;
+        float: none;
+        margin-bottom: 15px;
+    }
+
+    .portfolio-page .portfolio-img {
+        height: 230px;
+    }
+
+    .contact .map {
+        height: 230px;
+    }
+
+    aside .photo {
+        float: none;
+    }
+
+    .img-blog {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width : 496px) {
+
+    section.slide-show {
+        height: 240px;
+    }
+
+    .slide-show .sliderleft {
+        position: absolute;
+        left: 0px;
+        top: 50px;
+    }
+
+    .slide-show .sliderright {
+        position: absolute;
+        right: 0px;
+        top: 50px;
+    }
+
+    .slide-show-text {
+        height: 120px;
+        position: absolute;
+        top: 190px;
+        left: 0px;
+    }
+
+    .slide-show-text h2{
+        margin: 10px 20px;
+    }
+
+    section.thumb {
+        margin-top: 180px;
+    }
+    section.thumb .grid {
+        margin-left: 20px;
+    }
+
+    section.thumb .col-sm-3 {
+        float: left;
+        margin: 5px;
+        width: 140px;
+    }
+
+    section.recent-works {
+        float: none;
+    }
+
+    section.recent-works .recent-works-container {
+        margin-left: 0px;
+        max-width: 100%;
+        margin-left: 40px;
+    }
+
+    .portfolio-page .portfolio-img {
+        height: 195px;
+    }
+
+    .contact .map {
+        height: 195px;
+    }
+
+    .img-blog {
+        height: 120px;
+    }
+
+    .blogpost .info {
+        float: none;
+    }
+
+    .information .quote {
+        height: 130px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width : 431px) {
+    main {
+        margin-top: 80px;
+    }
+
+    section.slide-show {
+        height: 150px;
+    }
+
+    section.thumb .grid {
+        margin-left: 0px;
+    }
+
+    
+    section.thumb .col-sm-3 {
+        width: 140px;
+        margin: 1px;
+    }
+
+    section.blog .div-blog h3 {
+        height: 80px;
+    }
+
+    section.contents {
+        width: 80%;
+    }
+
+    .photo {
+        margin-top: 60px;
+    }
+
+    .portfolio-page .portfolio-img {
+        height: 130px;
+    }
+
+    .form form textarea {
+        width: 100%;
+    }
+
+    section.contents {
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-right: 0px;
+    }
+
+    aside {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 /* ==========================================================================
